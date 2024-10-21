@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sitio Web</title>
+        <link rel="stylesheet" href="Inicio.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+
+    </head>
+    <body>
+        
+        <div class="cont mb-8 ">
+            <nav class="bg-[#5a5967] flex items-center justify-between px-4 py-3">
+                <div class="flex items-center">
+                    <img class="size-16" src="img/logoAp.png" alt="Logo">
+                </div>
+            
+                <div class="block lg:hidden">
+                    <button id="navbar-toggler" class="text-slate-50 focus:outline-none">
+                        <i class="fas fa-bars"></i> 
+                    </button>
+                </div>
+            
+                <ul id="navbar-menu" class="hidden lg:flex flex-1 text-center space-x-6 justify-center">
+                    <li class="list-none inline-block"><a href="/Inicio.html" class="no-underline text-slate-50 px-3">Inicio</a></li>
+                    <li class="list-none inline-block"><a href="/Mac.html" class="no-underline text-slate-50 px-3">Mac</a></li>
+                    <li class="list-none inline-block"><a href="/Ipad.html" class="no-underline text-slate-50 px-3">IPad</a></li>
+                    <li class="list-none inline-block"><a href="/Iphone.html" class="no-underline text-slate-50 px-3">IPhone</a></li>
+                    <li class="list-none inline-block"><a href="/Accesorios.html" class="no-underline text-slate-50 px-3">Accesorios</a></li>
+                    <li class="list-none inline-block"><a href="/AirPods.html" class="no-underline text-slate-50 px-3">AirPods</a></li>
+                    <li class="list-none inline-block"><a href="/Contacto.html" class="no-underline text-slate-50 px-3">Contacto</a></li>
+
+                </ul>
+            
+                <ul id="mobile-menu" class="lg:hidden hidden flex-col bg-[#5a5967] space-y-4 mt-4 text-center">
+                    <li class="list-none"><a href="/Inicio.html" class="no-underline text-slate-50">Inicio</a></li>
+                    <li class="list-none"><a href="/Mac.html" class="no-underline text-slate-50">Mac</a></li>
+                    <li class="list-none"><a href="/Ipad.html" class="no-underline text-slate-50">IPad</a></li>
+                    <li class="list-none"><a href="/Iphone.html" class="no-underline text-slate-50">IPhone</a></li>
+                    <li class="list-none"><a href="/Accesorios.html" class="no-underline text-slate-50">Accesorios</a></li>
+                    <li class="list-none"><a href="/AirPods.html" class="no-underline text-slate-50">AirPods</a></li>
+                    <li class="list-none "><a href="/Contacto.html" class="no-underline text-slate-50 px-3">Contacto</a></li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="flex justify-center items-center bg-gray-200 w-64 h-24 mx-auto rounded-lg ring ring-blue-950 ring-offset-2">
+            <h1 class="text-2xl font-bold text-gray-800  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">Celulares</h1>
+        </div>
+
+
+        <div class="container mx-auto py-10">
+            <h2 class="text-3xl font-bold mb-6 text-center">Nuevos productos</h2>
+        
+            <!-- Carrusel -->
+            <div class="relative flex justify-center items-center">
+                <!-- Botón para Regresar -->
+                <button
+                    class="absolute left-2 lg:left-10 top-1/2 transform -translate-y-1/2 p-3 bg-gray-200 rounded-full shadow hover:bg-gray-300 transition z-10"
+                    onclick="prevSlide()"
+                >
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+        
+                <div class="overflow-hidden w-full max-w-4xl">
+                    <div id="carousel" class="flex transition-transform duration-500 ease-in-out"> 
+                        <div class="min-w-full bg-white p-5 rounded-lg shadow-lg text-center"> 
+                            <img
+                                src="/img/foto44.png"
+                                alt="Producto 1"
+                                class="w-32 h-32 mx-auto mb-4"
+                            />
+                            <p class="text-sm text-red-500">Nuevo</p>
+                            <p class="font-bold">iPhone 16 Pro Clear Case with MagSafe</p>
+                            <p class="text-gray-500">$49.00</p>
+                        </div>
+                        <div class="min-w-full bg-white p-5 rounded-lg shadow-lg text-center">
+                            <img
+                                src="/img/foto45.jpeg"
+                                alt="Producto 2"
+                                class="w-32 h-32 mx-auto mb-4"
+                            />
+                            <p class="text-sm text-red-500">Nuevo</p>
+                            <p class="font-bold">iPhone 16 Silicone Case with MagSafe</p>
+                            <p class="text-gray-500">$49.00</p>
+                        </div>
+                        <!-- Producto 3 -->
+                        <div class="min-w-full bg-white p-5 rounded-lg shadow-lg text-center">
+                            <img
+                                src="/img/foto9.png"
+                                alt="Producto 3"
+                                class="w-32 h-32 mx-auto mb-4"
+                            />
+                            <p class="font-bold">20W USB-C Power Adapter</p>
+                            <p class="text-gray-500">$19.00</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Botón para Seguir -->
+                <button
+                    class="absolute right-2 lg:right-10 top-1/2 transform -translate-y-1/2 p-3 bg-gray-200 rounded-full shadow hover:bg-gray-300 transition z-10"
+                    onclick="nextSlide()"
+                >
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+       
+        
+
+        <h2 class="text-3xl font-bold mb-6 text-center">Otros productos</h2>
+
+          
+        <div class="p-20 grid grid-cols-1 md:grid-cols-3 gap-16 pb-28">
+            <div class="bg-[#1F1D2B] py-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img src="/img/foto46.png" class="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full bg-slate-100" alt="">
+                <p class="text-xl">
+                    MagSafe Charger (1 m)
+                </p>
+                <span class="text-gray-400">
+                    $39.00 o $3.25/mo. for 12 mo.
+                </span>
+                <p class="text-gray-600">
+                    20 Unidades disponibles
+                </p>
+
+            </div>
+
+            <!-- 2 -->
+            <div class="bg-[#1F1D2B] py-5 rounded-xl flex flex-col items-center gap-3 text-center  text-gray-300">
+                    <img src="/img/foto47.jpeg" class="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full bg-slate-100" alt="">
+                <p class="text-xl">
+                    iPhone FineWoven Wallet with MagSafe – Blackberry
+                </p>
+                <span class="text-gray-400">
+                    $59 o $4.91/mo. for 12 mo.
+                </span>
+                <p class="text-gray-600">
+                    20 Unidades disponibles
+                </p>
+
+            </div>
+                <!-- 3 -->
+                <div class="bg-[#1F1D2B] py-5 rounded-xl flex flex-col items-center gap-3 text-center text-gray-300">
+                    <img src="/img/foto48.png" class="w-44 h-40 object-cover -mt-20 shadow-2xl rounded-full bg-slate-100" alt="">
+                    <p class="text-xl">
+                        USB-C to Lightning Adapter
+                    </p>
+                    <span class="text-gray-400">
+                     $29.00
+                    </span>
+                    <p class="text-gray-600">
+                        20 Unidades disponibles
+                    </p>
+    
+                </div>
+        </div>
+
+        <div class="flex justify-center items-center bg-gray-200 w-64 h-24 mx-auto rounded-lg ring ring-blue-950 ring-offset-2">
+            <h1 class="text-2xl font-bold text-gray-800 justify-center text-center  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">Featured Mac Accesorios</h1>
+        </div>
+
+
+        <div class="container mx-auto py-10">
+            <h2 class="text-3xl font-bold mb-6 text-center">Nuevos productos</h2>
+        
+            <div class="relative flex justify-center items-center">
+                <button
+                    class="absolute left-2 lg:left-10 top-1/2 transform -translate-y-1/2 p-3 bg-gray-200 rounded-full shadow hover:bg-gray-300 transition z-10"
+                    onclick="prevSlide1()"
+                >
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+        
+                <div class="overflow-hidden w-full max-w-4xl">
+                    <div id="carousel1" class="flex transition-transform duration-500 ease-in-out"> 
+                        <div class="min-w-full bg-white p-5 rounded-lg shadow-lg text-center"> 
+                            <img
+                                src="/img/foto49.png"
+                                alt="Producto 1"
+                                class="w-32 h-32 mx-auto mb-4"
+                            />
+                            <p class="text-sm text-red-500">Nuevo</p>
+                            <p class="font-bold">USB-C Digital AV Multiport Adapter</p>
+                            <p class="text-gray-500">$69.00</p>
+                        </div>
+                        <div class="min-w-full bg-white p-5 rounded-lg shadow-lg text-center">
+                            <img
+                                src="/img/foto50.png"
+                                alt="Producto 2"
+                                class="w-32 h-32 mx-auto mb-4"
+                            />
+                            <p class="text-sm text-red-500">Nuevo</p>
+                            <p class="font-bold">Magic Trackpad - Black Multi-Touch Surface</p>
+                            <p class="text-gray-500">$149.00</p>
+                        </div>
+                        <div class="min-w-full bg-white p-5 rounded-lg shadow-lg text-center">
+                            <img
+                                src="/img/foto51.png"
+                                alt="Producto 3"
+                                class="w-32 h-32 mx-auto mb-4"
+                            />
+                            <p class="font-bold">Magic Mouse - Black Multi-Touch Surface</p>
+                            <p class="text-gray-500">$99.00</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <button
+                    class="absolute right-2 lg:right-10 top-1/2 transform -translate-y-1/2 p-3 bg-gray-200 rounded-full shadow hover:bg-gray-300 transition z-10"
+                    onclick="nextSlide1()"
+                >
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+       
+        
+
+        <h2 class="text-3xl font-bold mb-6 text-center">Otros productos</h2>
+
+          
+        <div class="p-20 grid grid-cols-1 md:grid-cols-3 gap-16 pb-28">
+            <div class="bg-[#1F1D2B] py-8 rounded-xl flex flex-col items-center gap-2 text-center text-gray-300">
+                <img src="/img/foto52.png" class="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full bg-slate-100" alt="">
+                <p class="text-xl">
+                    Polishing Cloth
+                </p>
+                <span class="text-gray-400">
+                    $19.00
+                </span>
+                <p class="text-gray-600">
+                    20 Unidades disponibles
+                </p>
+
+            </div>
+
+            <!-- 2 -->
+            <div class="bg-[#1F1D2B] py-5 rounded-xl flex flex-col items-center gap-3 text-center  text-gray-300">
+                    <img src="/img/foto53.png" class="w-40 h-40 object-cover -mt-20 shadow-2xl rounded-full bg-slate-100" alt="">
+                <p class="text-xl">
+                    Thunderbolt 4 (USB‑C) Pro Cable (1 m)
+                </p>
+                <span class="text-gray-400">
+                    $60.00
+                </span>
+                <p class="text-gray-600">
+                    20 Unidades disponibles
+                </p>
+
+            </div>
+                <!-- 3 -->
+                <div class="bg-[#1F1D2B] py-5 rounded-xl flex flex-col items-center gap-3 text-center text-gray-300">
+                    <img src="/img/foto54.png" class="w-44 h-40 object-cover -mt-20 shadow-2xl rounded-full bg-slate-100" alt="">
+                    <p class="text-xl">
+                        USB-C to USB Adapter
+                    </p>
+                    <span class="text-gray-400">
+                     $19.00
+                    </span>
+                    <p class="text-gray-600">
+                        20 Unidades disponibles
+                    </p>
+    
+                </div>
+        </div>
+
+    </body>
+
+    <footer>
+        <section class="footer bg-[#060606] mt-5">
+            <div class="container">
+                <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
+                    <li>
+                        <div class="space-y-3">
+                            <a href="#" class="text-4xl font-bold uppercase text-amber-500">
+                                Smart <span class="text-stone-50">buy</span>
+                            </a>
+                           
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="flex flex-col gap-3 text-stone-50">
+                            <h3 class="text-lg uppercase font-bold">SOPORTE</h3>
+                            <a class="text-xs hover:text-gray-500">
+                                Politica de Privacidad
+                            </a>
+                            <a class="text-xs hover:text-gray-500">
+                                Terminos y condiciones
+                            </a>
+                            <a class="text-xs hover:text-gray-500">
+                                Contacto
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="space-y-8 text-stone-50">
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-bold">
+                                Telefono
+                            </h3>
+                            <p class="flex items-center gap-2  text-xs">
+                                +593 987 152 123
+
+                            </p>
+
+                        </div>
+                        <div class="space-y-2 ">
+                            <h3 class="text-lg uppercase font-bold">
+                                Correo
+                            </h3>
+                            <p class="flex items-center gap-2  text-xs">
+                                smartbuy@gmail.com
+
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="space-y-8 text-stone-50">
+                        <div class="space-y-2">
+                            <h3 class="text-lg uppercase font-bold">
+                                Dirección
+                            </h3>
+                            <p class="flex items-center gap-2  text-xs">
+                                Machala, El Oro Ecuador.
+
+                            </p>
+
+                        </div>
+
+
+                       
+                    </li>
+                </ul>
+
+                <div class="flex flex-col items-center border-t 
+                py-5 md:flex-row md:justify-between text-stone-50">
+                <p class="paragraph"> SmartBuy por Vilela</p>
+                <p class="paragraph">Copyright © 2024. Todos los derechos reservados.</p>
+
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+</html>
+
+<script>
+    document.getElementById('navbar-toggler').addEventListener('click', function () {
+           var menu = document.getElementById('mobile-menu');
+           menu.classList.toggle('hidden');
+       });
+</script>
+
+ <!-- Script para el  Carrusel1 -->
+ <script>
+    const carousel = document.getElementById("carousel");
+    let currentIndex = 0;
+    const totalSlides = carousel.children.length;
+
+    function nextSlide() {
+        const cardWidth = getCardWidth();
+        currentIndex = (currentIndex + 1) % totalSlides;
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    function prevSlide() {
+        const cardWidth = getCardWidth();
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        carousel.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }
+
+    function getCardWidth() {
+        return document.querySelector('.min-w-full').clientWidth;
+    }
+</script>
+
+ <!-- Script de Carrusel2 -->
+ <script>
+    const carousel1 = document.getElementById("carousel1");
+    let currentIndex1 = 0;
+    const totalSlides1 = carousel1.children.length;
+
+    function nextSlide1() {
+        const cardWidth = getCardWidth();
+        currentIndex1 = (currentIndex1 + 1) % totalSlides1;
+        carousel1.style.transform = `translateX(-${currentIndex1 * cardWidth}px)`;
+    }
+
+    function prevSlide1() {
+        const cardWidth = getCardWidth();
+        currentIndex1 = (currentIndex1 - 1 + totalSlides1) % totalSlides1;
+        carousel1.style.transform = `translateX(-${currentIndex1 * cardWidth}px)`;
+    }
+
+    function getCardWidth() {
+        return document.querySelector('.min-w-full').clientWidth;
+    }
+</script>
